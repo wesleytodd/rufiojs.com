@@ -1,0 +1,9 @@
+{
+  "name": "rufio-theme",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.scss": "git@github.com:JohnAlbin/normalize-scss.git",
+    "angular": "~1.2.12"
+  }
+}

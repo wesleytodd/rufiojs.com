@@ -1,0 +1,41 @@
+{
+  "title": "Rufio",
+  "hostname": "rufiojs.com",
+  "author": "Wes Todd",
+  "tagline": "A Static Site Generator With Fairy Dust",
+  "titleFormat": "<%= meta.title %> - <%= global.title %> - <%= global.tagline %>",
+  "dateFormat": "MM-DD-YY",
+  "types": {
+    "page": {
+      "directory": "content/page",
+      "permalink": "/<%= meta.slug %>.html",
+      "filters": "markdown",
+      "jsonPermalink": "/<%= type %>/<%= meta.slug %>.json"
+    },
+    "post": {
+      "directory": "content/post",
+      "permalink": "/<%= meta.date.year() %>/<%= meta.date.month() + 1 %>/<%= meta.slug %>.html",
+      "filters": "template,markdown",
+      "jsonPermalink": "/<%= type %>/<%= meta.slug %>.json"
+    }
+  },
+  "themes": {
+    "directory": "themes",
+    "active": "default"
+  },
+  "media": {
+    "directory": "media"
+  },
+  "build": {
+    "directory": "build",
+    "active": "active"
+  },
+  "plugins": {
+    "active": [
+      "json"
+    ]
+  },
+  "rufio": {
+    "metaEnd": "--META--"
+  }
+}
