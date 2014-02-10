@@ -32,10 +32,14 @@
   },
   "plugins": {
     "active": [
-      "json"
+      "json",
+	  "server"
     ]
   },
   "rufio": {
     "metaEnd": "--META--"
+  },
+  "server": {
+	"port": 8081
   }
 }

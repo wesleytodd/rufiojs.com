@@ -19,5 +19,8 @@
     "rufio": "~0.1.2",
     "rufio-json": "~0.0.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rufio-server": "0.0.2"
+  }
 }
